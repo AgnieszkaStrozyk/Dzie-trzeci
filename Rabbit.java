@@ -3,23 +3,33 @@ public class Rabbit {
     private String name;
     private Boolean softness;
 
-    Rabbit(int length, String name, boolean softness){
-        this.length= length;
-        this.name= name;
-        this.softness= softness;
-
-    }
-    public void changeNamae(String name){
+    public Rabbit(int length, String name, Boolean softness) {
+        this.length = length;
         this.name = name;
+        this.softness = softness;
     }
-    public String viewName(){
+
+    public int getLength() {
+        return length;
+    }
+
+    public String getName() {
         return name;
     }
-    public void changeSoftness(boolean softness){
-        this.softness=softness;
 
-    }
-    public Boolean viewSoftness(){
+    public Boolean getSoftness() {
         return softness;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSoftness(Boolean softness) {
+        this.softness = softness;
     }
 }
