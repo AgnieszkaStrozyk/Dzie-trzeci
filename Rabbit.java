@@ -1,12 +1,18 @@
 public class Rabbit {
-    int length;
-    String name;
-    Boolean softness;
+    private int length;
+    private String name;
+    private Boolean softness;
 
-    rabbit(int lenght; String name; boolean softness){
-        this.length =length;
-        this.name =name;
-        this.softness =softness;
+    Rabbit(int length, String name, boolean softness){
+        this.length= length;
+        this.name= name;
+        this.softness= softness;
 
+    }
+    public void changeNamae(String name){
+        this.name = name;
+    }
+    public String viewName(){
+        return name;
     }
 }
